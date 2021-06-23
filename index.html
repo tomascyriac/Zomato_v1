@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"
+    />                                                           <!-- google font link-->
+
+    <link href="style.css" rel="stylesheet"/>                    <!--CSS link tag-->    
+    <title>Zomato_v1</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+   <div class="navbar_brand">                                    <!--brand == logo-->
+    <img src="images/logo.png" alt="logo" class="navbar_logo"/>  <!-- zomato logo at nav bar-->
+   </div>
+   <div class="navbar_nav_items">                                <!--adding more items in nav bar-->
+
+    <button class="nav_item button_primary">Order Food</button>
+    
+     <!--(<button class="nav_items">Order Food</button>) if required you can add another item-->
+
+   </div>
+
+   
+        </nav> 
+
+    </header>
+
+    <main class="container">
+
+               <!--Hero section-->  
+
+      <section class="hero_container"> 
+      <div class="hero_image_container"> 
+      <img src="images/hero.jpg" alt="hero image" class="hero_image"/>
+
+      </div>
+
+      <div class="hero_content">
+          <h1 class="hero_text"> Order food from favorite hotels
+
+          </h1>
+          <button class="button_primary">Order now</button>
+</section>
+
+
+             <!--Explore menu container-->
+
+ 
+      <section class="explore_menu_container"> 
+
+      <h1 class="explore_menu_text">Explore our menu</h1>
+      
+      <div class="explore_menu_gradient_bg"></div>
+
+      <div class="explore_menu_lists">
+
+             
+              <!--burger-->
+
+          <div class="food_card">
+              <div class="food_card_image_container">
+                  <img src="./images/burger.jpg" alt="burger" class="food_image"/>
+              </div>
+              <div class="food_card_description">
+                  <h3 class="food_title">BURGER</h3>
+                  <p>Burger king,Chick king, <span style="color : red">3+ </span>  </p>
+              </div>
+          </div>
+
+              <!--pizza-->
+
+      <div class="food_card" id="pizza_card">
+        <div class="food_card_image_container">
+            <img src="./images/pizza.jpg" alt="pizza" class="food_image"/>
+        </div>
+        <div class="food_card_description">
+            <h3 class="food_title">PIZZA</h3>
+            <p>Pizza hut,Chick king, <span style="color : red">3+ </span>  </p>
+        </div>
+      </div>
+
+     <!--Icecream-->
+     <div class="food_card">
+        <div class="food_card_image_container">
+            <img src="./images/iceCream.jpg" alt="icecream" class="food_image"/>
+        </div>
+        <div class="food_card_description">
+            <h3 class="food_title">ICECREAM</h3>
+            <p>Amul, Merriboy, <span style="color : red">3+ </span>  </p>
+        </div>
+        </div>
+
+
+    </div>
+
+         <!--Button-->
+
+    <div class="explore_menu_view_more">
+        <button class="button_primary">View more</button>
+    </div>
+
+</section>
+
+    <!--Hotel list-->
+
+<section class="hotel_container">
+
+   <h1 class="hotel_text">Order from top hotels
+
+   </h1>
+
+ <div class="hotel_images_container">  
+
+    <div class="hotel_images_row_1">
+
+     <div class="hotel_image_1">
+         <img src="./images/restaurant1.jpg" alt="hotel1" class="hotel_1"/>
+     </div>
+
+     <div class="hotel_image_2">
+        <img src="./images/restaurant2.jpg" alt="hotel2" class="hotel_2"/>
+     </div>
+
+
+    </div> 
+
+    <div class="hotel_images_row_2">
+
+      <div class="hotel_image_3">
+        <img src="./images/restaurant3.jpg" alt="hotel3" class="hotel_3"/>
+      </div>
+
+      <div class="hotel_image_4">
+        <img src="./images/restaurant4.jpg" alt="hotel4" class="hotel_4"/>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!--my work input-->
+
+</section>
+
+<section class="stay_update_container">
+
+    <h1 class="stayupdate_text">Stay Updated</h1>
+
+
+    <div class="getupdate_input">
+
+        <input  type="email" placeholder="Enter your Email" required id="emailid"/>
+        <button class="button_primary">Get Update</button>
+
+    </div>
+
+
+</section>
+
+<div class="middle_image">  
+
+    <img src="images/m_2.jpg" alt="logo" class="mi_1" style="width:100" /> 
+     
+    <div class="centered">When a man's stomach is full is it makes no diferrence wheather he is rich or poor</div>
+</div>
+
+<footer>
+    
+    <nav class="footer_bg">
+
+        <div class="footer_brand">                                   
+         <img src="images/zomato_footer.png" alt="logo" class="footer_logo"/>  
+       
+
+        </div>
+
+        <div class="footerbar_items">                                
+     
+            <p class="footer_t1">Pricing</p>
+            <p class="footer_t2">Terms and condition</p>
+            <p class="footer_t3">Partnership</p>
+            <p class="footer_t4">Career</p>
+            <p class="footer_t4">Contact</p>
+         
+          
+     
+        </div>
+     
+     </nav> 
+
+ 
+</footer>
+
+
+</main> 
+ 
+
+</body>
+</html>

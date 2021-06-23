@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff;
+}
+
+  /*........................................navigation bar............................................*/
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    height: 60px;
+
+}
+
+.navbar_brand{
+    width: 100px;
+}
+
+.navbar_logo{
+    width: 100%;
+}
+.nav_item{
+    background-image: linear-gradient(
+    to right,
+        #ff512f 0%,
+            #dd2476 51%,
+                #ff512f 100%
+                  );
+
+ padding: 12px;
+ border: none;
+ border-radius :12px;
+ cursor:pointer /*palm icon*/
+
+
+}
+@media (min-width: 768px){ 
+    
+    
+    .footer_logo{
+        width: 160px;
+        height: 40px;
+        margin: 55px 10px ;
+    
+    }
+    
+    .footer_brand{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .hotel_container{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+ 
+
+    }   /* responsiveness for tablet adjusting the space */
+
+    .hotel_text{
+        width: 100%;
+        font-size: 25px;
+    }
+  .navbar{
+      justify-content: space-between;
+      padding: 5px 30px;
+  }  
+  .hero_container{
+      display: flex;  /*image and letter together*/
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-top:15px ;
+      margin-bottom: 100px;
+  }
+  .explore_menu_lists{
+      display: flex;
+      gap:15px;
+      padding: 0px 30px;
+  } 
+
+  #pizza_card{
+    margin-top: -15px;
+    margin-bottom: 30px;
+
+  }
+  .explore_menu_view_more{  /*button*/
+    display: flex;
+    justify-content: center;
+
+}
+.explore_menu_container{
+    margin-top: 30px;
+
+    position: relative; 
+}
+
+.explore_menu_gradient_bg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to right,
+            #ff512f 0%,
+                #dd2476 51%,
+                    #ff512f 100%
+                      );
+                      z-index:-3 ;
+                      transform: skewY(-5deg);
+
+}
+}
+
+
+  
+@media (min-width: 1020px){  
+    
+   
+    
+    .container{
+        max-width: 900px; 
+    }      
+    .navbar_brand{  /* responsiveness for Laptop .here we are increasing the zomato logo size for laptop screen*/
+        width: 150px;
+    }
+    .button_primary{
+        padding: 20px;
+        font-size: 20px;
+    } /* here we are increasing the  size og order button using padding and font size for laptop screen*/
+ 
+    .hero_content{
+        width:100%;
+    }
+
+    .hero_text{
+        font-size: 50px;
+        margin: 20px 0px;
+    }
+    .explore_menu_lists{
+        gap: 40px;
+    }
+    .explore_menu_text{
+        font-size: 50px;
+    }
+  
+}
+
+
+  .nav_item:hover{/*button settings*/
+      background-color: darkorange;
+      
+  }
+  .nav_item:focus{
+      background-color: lawngreen;
+  }
+
+
+
+   /*........................................ Botton............................................*/
+
+.button_primary{
+    background-image: linear-gradient(
+        to right,
+            #ff512f 0%,
+                #dd2476 51%,
+                    #ff512f 100%
+                      );
+    
+     padding: 8px;
+     border: none;
+     border-radius :12px;
+     cursor:pointer ;
+     height: 40px;/*palm icon*/
+     color: #fff;
+     
+}
+
+
+  /*..........................................Button............................................*/
+
+
+  /*........................................BODY............................................*/
+  
+  .hero_image_container
+  {
+      width:100%
+  }
+  .hero_image
+  {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 25px 50px -12px rgba (0,0,0,0.25) ;
+  }
+  .container{
+      max-width: 100%;
+      padding: 0px 20px;
+      margin: 0 auto; 
+  }
+  .hero_text{
+      font-size: 30px;
+      margin: 20px 0px;
+  }
+  @media(min-width: 1400px){
+      .container{
+          max-width: 1250px ;
+      }
+  }
+   /*........................................ explore menu............................................*/
+
+  .food_card_image_container{
+      
+      width: 100%;
+  }
+  .food_image{
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+  }
+  .food_card{
+      background-color: #fff;
+      margin: 15px;
+      border-radius: 10px;
+
+  }
+  .food_card_description{
+
+   padding: 20px;
+  }
+
+  .explore_menu_text
+  {
+    font-size: 30px;
+    margin: 50px;
+    margin-bottom:30px;
+    text-align: center;
+
+  }
+
+  /*....................hotel section...............................*/
+
+  .hotel_images_container{
+      width: 100%;
+      
+
+  }
+  .hotel_images_row_1,.hotel_images_row_2{
+      width: 100%;
+      display: flex;
+      gap: 3px;
+  }
+  
+  .hotel_image_1,.hotel_image_4{
+      width: 100%;
+      height: 120px;
+
+  }
+ 
+  .hotel_image_2,.hotel_image_3
+  {
+      width: 120%;
+      height: 200px;
+  }
+  
+  .hotel_1,.hotel_2,.hotel_3,.hotel_4{
+      width: 100%;
+      height: 100%;
+  }
+  .hotel_images_row_1{
+      align-items: baseline ;
+      margin-bottom: 3px;
+  }
+.hotel_text{
+    font-size: 30px;
+    margin: 50px;
+    margin-bottom:30px;
+    text-align: center; 
+}
+
+/*.....................stayupdate...................*/
+
+.stayupdate_text{
+
+    width: 100%;
+    font-size: 40px;   
+    margin: 8px 0px;
+    text-align: center; 
+    padding: 20px;
+
+  
+}
+.getupdate_input{
+   margin-left: 33%;
+}
+
+#emailid{
+    width: 40%;
+    height: 45px;
+    background-color: ebf2ff;
+    border: solid #dd2476;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*.....................stayupdate...................*/
+.footer_bg
+{
+  margin-top: 50px;
+    height:150Px;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+            #ff512f 0%,
+                #dd2476 51%,
+                    #ff512f 100%
+                      );
+                      border-radius: 15px;
+    
+}
+
+
+.footer_logo{
+    width: 160px;
+    height: 40px;
+   margin-left: 90px;
+}
+
+.footer_brand{
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer_bg{
+    justify-content: space-between;
+    padding: 5px 40px;
+} 
+.footer_bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px 80px;
+
+    
+}
+
+.footer_t2,.footer_t3,.footer_t4,.footer_t5,.footer_t1
+
+{
+    color: #fff;
+    
+    
+}
+
+.footerbar_items
+{
+    margin-right: 80px;
+    margin-left: 80px ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+  .mi_1
+
+  {  
+      top: 50%; 
+      left: 50%;
+      height: 300px;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 25px 50px -12px rgba (0,0,0,0.25) ;
+    
+  }
+
+  .middle_image 
+  
+  {
+        position: relative;
+        text-align: center;
+        color:#fff;
+        font-weight: 500px;
+
+}
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
